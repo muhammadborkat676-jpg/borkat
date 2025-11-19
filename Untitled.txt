@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>borkat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.8;
+            padding: 60px 20px;
+        }
+        
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        
+        header {
+            margin-bottom: 100px;
+        }
+        
+        h1 {
+            color: #ff0000;
+            font-size: 28px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-bottom: 60px;
+        }
+        
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+        
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        
+        nav a:hover {
+            color: #ff0000;
+        }
+        
+        section {
+            margin-bottom: 120px;
+        }
+        
+        h2 {
+            color: #ff0000;
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 50px;
+        }
+        
+        .writing {
+            margin-bottom: 60px;
+        }
+        
+        .writing h3 {
+            color: #ff0000;
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 12px;
+        }
+        
+        .writing p {
+            color: #ffffff;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        
+        .note {
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+        
+        .note.red {
+            color: #ff0000;
+        }
+        
+        .subscribe-box {
+            margin-top: 100px;
+            padding-top: 60px;
+            border-top: 1px solid #333333;
+        }
+        
+        .subscribe-box h2 {
+            margin-bottom: 20px;
+        }
+        
+        .subscribe-box p {
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+        
+        .subscribe-form {
+            display: flex;
+            gap: 10px;
+            max-width: 500px;
+        }
+        
+        input[type="email"] {
+            flex: 1;
+            padding: 12px 16px;
+            background-color: #000000;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            font-size: 15px;
+            outline: none;
+        }
+        
+        input[type="email"]:focus {
+            border-color: #ff0000;
+        }
+        
+        button {
+            padding: 12px 24px;
+            background-color: #ffffff;
+            color: #000000;
+            border: none;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #ff0000;
+            color: #ffffff;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 40px 20px;
+            }
+            
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .subscribe-form {
+                flex-direction: column;
+            }
+            
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>borkat</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="writings.html">Writings</a>
+                <a href="notes.html">Notes</a>
+                <a href="newsletter.html">Newsletter</a>
+            </nav>
+        </header>
+        
+        <section>
+            <h2>Latest Writings</h2>
+            
+            <div class="writing">
+                <h3>The Compound Effect of Small Decisions</h3>
+                <p>Every choice you make is a vote for the type of person you want to become. The small decisions compound over time, creating momentum that either propels you forward or holds you back. Most people underestimate the power of daily micro-choices.</p>
+            </div>
+            
+            <div class="writing">
+                <h3>Building in Public Without the Noise</h3>
+                <p>There is a difference between sharing your journey and performing your work. True building in public means documenting insights worth sharing, not creating content for the sake of visibility. Focus on substance over frequency.</p>
+            </div>
+            
+            <div class="writing">
+                <h3>The Art of Strategic Ignorance</h3>
+                <p>Information abundance requires deliberate filtering. Knowing what to ignore is as important as knowing what to learn. Most people consume too much and create too little. Protect your attention as you would protect your time.</p>
+            </div>
+            
+            <div class="writing">
+                <h3>Why Constraints Breed Creativity</h3>
+                <p>Unlimited resources often lead to bloated solutions. Constraints force clarity and innovation. The best work emerges when you have just enough resources to execute but not enough to waste. Embrace limitations as a creative tool.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Short Notes</h2>
+            
+            <div class="note red">Real wealth is time freedom combined with purchasing power.</div>
+            <div class="note">Most productivity advice is procrastination in disguise.</div>
+            <div class="note red">Build systems, not goals. Goals are temporary, systems compound.</div>
+            <div class="note">The ability to say no is the foundation of focus.</div>
+            <div class="note red">Consistency beats intensity over time.</div>
+            <div class="note">Your environment shapes your behavior more than your willpower does.</div>
+            <div class="note red">Learning without execution is just entertainment.</div>
+            <div class="note">The best investment is in skills that compound: writing, speaking, thinking.</div>
+            <div class="note">Attention is the currency of the modern world. Spend it wisely.</div>
+            <div class="note red">Simple solutions are harder to find than complex ones.</div>
+            <div class="note">Most people overestimate what they can do in a year and underestimate what they can do in a decade.</div>
+            <div class="note red">The quality of your questions determines the quality of your life.</div>
+        </section>
+        
+        <div class="subscribe-box">
+            <h2>Subscribe</h2>
+            <p>Get updates in your inbox.</p>
+            <form class="subscribe-form">
+                <input type="email" placeholder="your@email.com" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writings - borkat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.8;
+            padding: 60px 20px;
+        }
+        
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        
+        header {
+            margin-bottom: 100px;
+        }
+        
+        h1 {
+            color: #ff0000;
+            font-size: 28px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-bottom: 60px;
+        }
+        
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+        
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        
+        nav a:hover {
+            color: #ff0000;
+        }
+        
+        h2 {
+            color: #ff0000;
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 60px;
+        }
+        
+        .writing {
+            margin-bottom: 60px;
+        }
+        
+        .writing h3 {
+            color: #ff0000;
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 12px;
+        }
+        
+        .writing p {
+            color: #ffffff;
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 8px;
+        }
+        
+        .writing .date {
+            color: #666666;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 40px 20px;
+            }
+            
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>borkat</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="writings.html">Writings</a>
+                <a href="notes.html">Notes</a>
+                <a href="newsletter.html">Newsletter</a>
+            </nav>
+        </header>
+        
+        <h2>All Writings</h2>
+        
+        <div class="writing">
+            <h3>The Compound Effect of Small Decisions</h3>
+            <p>Every choice you make is a vote for the type of person you want to become. The small decisions compound over time, creating momentum that either propels you forward or holds you back. Most people underestimate the power of daily micro-choices.</p>
+        </div>
+        
+        <div class="writing">
+            <h3>Building in Public Without the Noise</h3>
+            <p>There is a difference between sharing your journey and performing your work. True building in public means documenting insights worth sharing, not creating content for the sake of visibility. Focus on substance over frequency.</p>
+        </div>
+        
+        <div class="writing">
+            <h3>The Art of Strategic Ignorance</h3>
+            <p>Information abundance requires deliberate filtering. Knowing what to ignore is as important as knowing what to learn. Most people consume too much and create too little. Protect your attention as you would protect your time.</p>
+        </div>
+        
+        <div class="writing">
+            <h3>Why Constraints Breed Creativity</h3>
+            <p>Unlimited resources often lead to bloated solutions. Constraints force clarity and innovation. The best work emerges when you have just enough resources to execute but not enough to waste. Embrace limitations as a creative tool.</p>
+        </div>
+        
+        <div class="writing">
+            <h3>The Myth of Work-Life Balance</h3>
+            <p>Balance is not about equal time distribution but about intentional energy allocation. Some seasons require intense focus on work, others on rest. The goal is not balance in every moment but harmony over time.</p>
+        </div>
+        
+        <div class="writing">
+            <h3>Building Leverage Through Writing</h3>
+            <p>Writing is the most scalable form of leverage available to most people. It requires no permission, no capital, and compounds indefinitely. A single piece of writing can create opportunities years after publication. Start writing today.</p>
+        </div>
+        
+        <div class="writing">
+            <h3>The Power of Defaulting to Action</h3>
+            <p>Most people wait for perfect conditions before starting. Action creates information that waiting cannot provide. Build a bias toward movement. You can adjust course once you start, but you cannot steer a parked car.</p>
+        </div>
+        
+        <div class="writing">
+            <h3>Why Speed Matters More Than Perfection</h3>
+            <p>Shipping fast builds momentum and generates feedback loops. Perfection is often a form of fear. The market teaches faster than any amount of internal deliberation. Launch, learn, iterate.</p>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes - borkat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.8;
+            padding: 60px 20px;
+        }
+        
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        
+        header {
+            margin-bottom: 100px;
+        }
+        
+        h1 {
+            color: #ff0000;
+            font-size: 28px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-bottom: 60px;
+        }
+        
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+        
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        
+        nav a:hover {
+            color: #ff0000;
+        }
+        
+        h2 {
+            color: #ff0000;
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 60px;
+        }
+        
+        .note {
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+        
+        .note.red {
+            color: #ff0000;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 40px 20px;
+            }
+            
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>borkat</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="writings.html">Writings</a>
+                <a href="notes.html">Notes</a>
+                <a href="newsletter.html">Newsletter</a>
+            </nav>
+        </header>
+        
+        <h2>Notes</h2>
+        
+        <div class="note red">Real wealth is time freedom combined with purchasing power.</div>
+        <div class="note">Most productivity advice is procrastination in disguise.</div>
+        <div class="note red">Build systems, not goals. Goals are temporary, systems compound.</div>
+        <div class="note">The ability to say no is the foundation of focus.</div>
+        <div class="note red">Consistency beats intensity over time.</div>
+        <div class="note">Your environment shapes your behavior more than your willpower does.</div>
+        <div class="note red">Learning without execution is just entertainment.</div>
+        <div class="note">The best investment is in skills that compound: writing, speaking, thinking.</div>
+        <div class="note">Attention is the currency of the modern world. Spend it wisely.</div>
+        <div class="note red">Simple solutions are harder to find than complex ones.</div>
+        <div class="note">Most people overestimate what they can do in a year and underestimate what they can do in a decade.</div>
+        <div class="note red">The quality of your questions determines the quality of your life.</div>
+        <div class="note">Reading without thinking is just scrolling with extra steps.</div>
+        <div class="note red">Build leverage: code, media, capital, labor.</div>
+        <div class="note">The internet rewards authenticity and punishes pretension.</div>
+        <div class="note">Most competitive advantages come from doing the boring work consistently.</div>
+        <div class="note red">Your network determines your net worth, but only if you provide value first.</div>
+        <div class="note">Expertise is pattern recognition accelerated by deliberate practice.</div>
+        <div class="note">The best time to start was yesterday. The second best time is now.</div>
+        <div class="note red">Optimize for learning rate, not immediate outcomes.</div>
+        <div class="note">Status games are zero-sum. Wealth creation is positive-sum.</div>
+        <div class="note">Most breakthroughs come from disciplined execution, not sudden inspiration.</div>
+        <div class="note red">Build something people want, not something you can sell.</div>
+        <div class="note">The cost of interruption is exponentially higher than the length of the interruption.</div>
+        <div class="note">Clear writing is clear thinking made visible.</div>
+        <div class="note red">Freedom comes from having options, not from having things.</div>
+        <div class="note">The map is not the territory. Models are useful but incomplete.</div>
+        <div class="note">Suffering comes from wanting reality to be different than it is.</div>
+        <div class="note red">Compress decades into years by surrounding yourself with people ahead of you.</div>
+        <div class="note">The only real competitive advantage is learning faster than your competition.</div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter - borkat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.8;
+            padding: 60px 20px;
+        }
+        
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        
+        header {
+            margin-bottom: 100px;
+        }
+        
+        h1 {
+            color: #ff0000;
+            font-size: 28px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-bottom: 60px;
+        }
+        
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+        
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        
+        nav a:hover {
+            color: #ff0000;
+        }
+        
+        .newsletter-section {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #ff0000;
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        
+        .newsletter-section p {
+            color: #ffffff;
+            font-size: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .subscribe-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        input[type="email"] {
+            padding: 14px 18px;
+            background-color: #000000;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            font-size: 15px;
+            outline: none;
+            text-align: center;
+        }
+        
+        input[type="email"]:focus {
+            border-color: #ff0000;
+        }
+        
+        button {
+            padding: 14px 24px;
+            background-color: #ffffff;
+            color: #000000;
+            border: none;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #ff0000;
+            color: #ffffff;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 40px 20px;
+            }
+            
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>borkat</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="writings.html">Writings</a>
+                <a href="notes.html">Notes</a>
+                <a href="newsletter.html">Newsletter</a>
+            </nav>
+        </header>
+        
+        <div class="newsletter-section">
+            <h2>Subscribe to updates</h2>
+            <p>Enter your email to receive new writing.</p>
+            <form class="subscribe-form">
+                <input type="email" placeholder="your@email.com" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
